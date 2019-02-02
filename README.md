@@ -1,3 +1,23 @@
+## Acerca de mí
+
+Ingeniero eléctrico con experiencia en el sector petrolero e investigador con maestría en sistemas digitales y sistemas de control en la Universidad de Guanajuato en México y PhD en Doctorado en Ingeniería Eléctrica, Electrónica y Automática de la Universidad Carlos III de Madrid en España.
+
+Experiencia en el sector petrolero dentro de PEMEX (México), en el diseño de arquitecturas de control de sistemas eléctricos abarcando diseño de instalaciones eléctricas, control de motores y subestaciones eléctricas. Experiencia en los campos de electrónica de potencia con sistemas embebidos (PFGA y Power in the Loop), aplicados a calidad de la energía y a sistemas de fuentes de generación distribuida controlables.
+Especialización en los campos de diseño de sistemas de control incorporando las tecnologías de simulación digital en tiempo real (RTDS), implementación experimental de sistemas de control aplicado a fuentes de generación distribuida y dispositivos FACTS empleando las plataformas: LabVIEW, xPC Target, dSPACE y OPAL-RT.
+
+Ha trabajado en la Universidad Carlos III de Madrid en el desarrollo de sistemas de gestión de redes inteligentes dentro del grupo de investigación CERES y en el centro de investigación CIRCE en el área de sistemas de protecciones eléctricas y homologación de relevadores de potencia eléctricos.
+
+## Experiencia
+Advanced Consultant & Engineer 
+Altran
+
+
+
+
+## Educación
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/lg-gonzalez-juarez/lg-gonzalez-juarez.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

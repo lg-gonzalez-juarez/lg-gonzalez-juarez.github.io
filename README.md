@@ -8,6 +8,7 @@ Especialización en los campos de diseño de sistemas de control incorporando la
 Ha trabajado en la Universidad Carlos III de Madrid en el desarrollo de sistemas de gestión de redes inteligentes dentro del grupo de investigación CERES y en el centro de investigación CIRCE en el área de sistemas de protecciones eléctricas y homologación de relevadores de potencia eléctricos.
 
 ## Experiencia
+
 Advanced Consultant & Engineer 
 Altran
 
@@ -15,27 +16,20 @@ Investigador
 Fundación CIRCE
 Diseño y aplicación de pruebas a equipos de subestaciones eléctricas mediante el empleo de equipos Hardware in the Loop dentro del proyecto IdEAS (interoperabilidad de equipos de automatización de subestaciones)
 
-
-
 TECHNICAL RESEARCH OF PROJECT SUPPORT
 Carlos III University of Madrid
 OSIRIS Optimization of intelligent monitoring of the distribution network
 PRICE-GEN Intelligent Network Project in the corridor Henares (Power Management)
 DOMOCELL Domiciliary system for recharging electric vehicle batteries
 
-
 Formación de investigador en el extranjero
 CONACYT
 Universidad Carlos III de Madrid
-
-
-
 
 Supervisor en seguridad
 REYSA
 Refinería Ing. Antonio M. Amor (RIAMA)
 Supervisor en seguridad en instalaciones eléctricas en reparación del sector Católitico-RIAMA.
-
 
 Supervisor de obra eléctrica y sistemas de control
 Conjunto de Servicios Industriales, http://www.grupocsimexico.com
@@ -77,7 +71,7 @@ Huecos de tensiones, calidad de la energía, instalaciones industriales.
 Prácticas profesionales en la Central Termoeléctrica de Salamanca, México.
 
 
-
+## Certificaciones
 
 
 ## Welcome to GitHub Pages

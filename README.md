@@ -9,42 +9,40 @@ Ha trabajado en la Universidad Carlos III de Madrid en el desarrollo de sistemas
 
 ## Experiencia
 
-Advanced Consultant & Engineer 
-Altran
+### Altran - Advanced Consultant & Engineer 
 
-Investigador
-Fundación CIRCE
+
+
+### CIRCE -Investigador
 Diseño y aplicación de pruebas a equipos de subestaciones eléctricas mediante el empleo de equipos Hardware in the Loop dentro del proyecto IdEAS (interoperabilidad de equipos de automatización de subestaciones)
 
-TECHNICAL RESEARCH OF PROJECT SUPPORT
-Carlos III University of Madrid
-OSIRIS Optimization of intelligent monitoring of the distribution network
-PRICE-GEN Intelligent Network Project in the corridor Henares (Power Management)
-DOMOCELL Domiciliary system for recharging electric vehicle batteries
+### Carlos III University of Madrid - TECHNICAL RESEARCH OF PROJECT SUPPORT
 
-Formación de investigador en el extranjero
-CONACYT
+#### OSIRIS Optimization of intelligent monitoring of the distribution network
+#### PRICE-GEN Intelligent Network Project in the corridor Henares (Power Management)
+#### DOMOCELL Domiciliary system for recharging electric vehicle batteries
+
+### Formación de investigador en el extranjero - CONACYT
 Universidad Carlos III de Madrid
 
-Supervisor en seguridad
-REYSA
+### Supervisor en seguridad - REYSA
 Refinería Ing. Antonio M. Amor (RIAMA)
 Supervisor en seguridad en instalaciones eléctricas en reparación del sector Católitico-RIAMA.
 
-Supervisor de obra eléctrica y sistemas de control
+### Supervisor de obra eléctrica y sistemas de control
 Conjunto de Servicios Industriales, http://www.grupocsimexico.com
 Refinería Ing. Antonio M. Amor (RIAMA)
 Diseño de ingeniería, puesta en servicio, y arranque de: maquinaria eléctrica, centro de control de motores, y controles embebidos para subestaciones eléctricas en media tensión en el sector petrolero. Programación de autómatas Allen-Bradley para sistemas de arranque-paro y señalización de control de bombas en entornos explosivos y corrosivos.
 
 
-Practicante de Ingenería Eléctrica
-Siemens
+### Practicante de Ingenería Eléctrica - Siemens
 Desktoop and Embedded Software Engineer
 - RTOS control system
 -Embedded control system
 -Desktoop software design
 
-Prácticas dentro de RIAMA. Puesta en servicio de PLC y programación de autómatas Siemens S7. Puesta en servicio de sensores de pH y de acidez en entornos explosivos y corrosivos, calibración y mantenimiento.
+### Prácticas dentro de RIAMA. 
+Puesta en servicio de PLC y programación de autómatas Siemens S7. Puesta en servicio de sensores de pH y de acidez en entornos explosivos y corrosivos, calibración y mantenimiento.
 
 ## Educación
 

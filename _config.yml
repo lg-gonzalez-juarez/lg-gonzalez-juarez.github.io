@@ -1,1 +1,32 @@
-theme: jekyll-theme-slate
+# Site settings
+title: Lorena González Juarez
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: fed136
+  secondary: fec503 
+  secondary-dark: 000
+
+# Social networks usernames (many more available: envelope, google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: spotify
+    url: https://open.spotify.com/artist/7qqyFgWYB9FaNRAzLFfoLp?si=-Kq0KwQjRYqOaUopazRl7w
+  - title: soundcloud
+    url: https://soundcloud.com/z-amil
+  - title: youtube
+    url: https://www.youtube.com/channel/UCLY9GprpJlXEDVvaWiS3cgw
+  - title: instagram
+    url: https://www.instagram.com/cesartorresguitarrista
+  - title: instagram
+    url: https://www.instagram.com/cesarsanchezmusica
+  - title: linkedin
+    url: https://www.linkedin.com/in/cesartorresmusic
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Madrid
+  - line: Madrid
+
+# Build settings
+markdown: kramdown
+permalink: pretty

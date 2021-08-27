@@ -1,0 +1,43 @@
+{% include css/bootstrap.min.css %}
+{% include css/agency.css %}
+
+.bg-png {
+    width: 105%;
+	background: #fff url(../img/light_mosaic.png) repeat 0 0;
+}
+
+/** ## carousel **/
+
+#ctm-carousel-btn {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    color: rgba(230,230,230,1);
+    background-color: #fed136; }
+
+#ctm-carousel-btn:hover {
+    background-color: rgba(254, 209, 54, 0.5); }
+
+/** ## footer **/
+
+.fa-gmail2020 {
+    content: url(../img/gmail2020.svg);
+    height: 0.89em;
+    width: auto;
+}
+
+.fa {
+    font-size: 2em; }
+
+@media only screen and (min-width: 450px) {
+    .fa {
+        font-size: 3em; } }
+
+@media only screen and (min-width: 600px) {
+    .fa {
+        font-size: 4em; } }
+
+@media only screen and (min-width: 800px) {
+    .fa {
+        font-size: 5em; } }

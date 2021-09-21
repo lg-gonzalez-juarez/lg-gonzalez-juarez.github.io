@@ -9,14 +9,8 @@ color:
 
 # Social networks usernames (many more available: envelope, google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: spotify
-    url: https://open.spotify.com/artist/7qqyFgWYB9FaNRAzLFfoLp?si=-Kq0KwQjRYqOaUopazRl7w
-  - title: soundcloud
-    url: https://soundcloud.com/z-amil
   - title: youtube
     url: https://www.youtube.com/channel/UCLY9GprpJlXEDVvaWiS3cgw
-  - title: instagram
-    url: https://www.instagram.com/cesartorresguitarrista
   - title: instagram
     url: https://www.instagram.com/cesarsanchezmusica
   - title: linkedin

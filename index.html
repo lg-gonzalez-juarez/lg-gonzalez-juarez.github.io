@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lorena Guadalupe Gonzalez Juarez · Electric, Electronic and Automatic PhD</title>
-<meta name="description" content="Personal website of Lorena Guadalupe Gonzalez Juarez: PhD in Electrical, Electronic and Automatic Engineering, consultant at Capgemini. Control, digital systems, electrical protections and IEC 61850.">
+<title>Lorena Guadalupe González Juárez · Research Scientist · PhD in Electrical Engineering</title>
+<meta name="description" content="Personal website of Lorena Guadalupe Gonzalez Juarez: Research Scientist, PhD in Electrical Engineering (UC3M, cum laude). Advanced control systems, Hardware in the Loop, smart grids, propulsion plants and wind turbines.">
 <link rel="canonical" href="https://lorenaguadalupegonzalezjuarez.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lorena Guadalupe Gonzalez Juarez">
-<meta property="og:description" content="PhD in Electrical, Electronic and Automatic Engineering. Control and digital systems.">
+<meta property="og:description" content="Research Scientist · PhD in Electrical Engineering. Advanced control systems, HIL, smart grids, propulsion plants and wind turbines.">
 <meta property="og:url" content="https://lorenaguadalupegonzalezjuarez.com/">
 <meta property="og:image" content="https://lorenaguadalupegonzalezjuarez.com/img/header-bg.jpg">
 <meta name="theme-color" content="#0b0f17">
@@ -38,6 +38,7 @@ a:hover{text-decoration:underline}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:1.2rem;letter-spacing:-.02em;white-space:nowrap}
 .brand:hover{text-decoration:none}
 .brand svg{width:22px;height:22px;flex:none}
+.brand{min-width:0}.brand>span{overflow:hidden;text-overflow:ellipsis}.burger{flex:none}
 .menu{display:flex;gap:28px;list-style:none;margin:0;padding:0}
 .menu a{color:#d5dbe6;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:6px 0;border-bottom:2px solid transparent}
 .menu a:hover,.menu a.on{color:#fff;border-color:var(--accent);text-decoration:none}
@@ -131,13 +132,15 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.card{transition:none}}
 
 /* ---------- Móvil ---------- */
-@media (max-width:860px){
+@media (max-width:1200px){
   .burger{display:block}
   .menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(11,15,23,.98);
     border-bottom:1px solid var(--line);padding:8px 20px 16px;display:none}
   .menu.open{display:flex}
   .menu a{display:block;padding:13px 0;border-bottom:1px solid var(--line);font-size:.9rem}
   .menu li:last-child a{border-bottom:0}
+}
+@media (max-width:860px){
   section{padding:70px 0}
   .about{grid-template-columns:1fr;gap:28px}
   .timeline::before{left:9px}
@@ -147,6 +150,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
   .timeline ul li{padding-left:22px}
   .contact iframe{height:980px}
 }
+@media (max-width:480px){.brand{font-size:1rem}}
 </style>
 </head>
 <body>
@@ -162,6 +166,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#sobre-mi">About me</a></li>
       <li><a href="#biografia">Trayectoria</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="#publicaciones">Publicaciones</a></li>
       <li><a href="#repos">Repos</a></li>
       <li><a href="#videos">Vídeos</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -173,15 +179,16 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
   <!-- ============ INICIO ============ -->
   <header class="hero" id="inicio">
     <div class="wrap">
-      <span class="eyebrow">PhD · Ingeniera</span>
+      <span class="eyebrow">PhD · Research Scientist</span>
       <h1>Lorena Guadalupe González Juárez</h1>
-      <p class="lead">Eléctrica, Electrónica y Automática: <strong>control y sistemas digitales</strong></p>
+      <p class="lead">Ingeniería eléctrica: <strong>sistemas de control avanzado</strong>, plantas de propulsión y aerogeneradores</p>
       <div class="cta">
         <a class="btn btn-primary" href="#biografia">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
           Ver mi trayectoria
         </a>
         <a class="btn btn-ghost" href="#contact">Contactar</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/lg-gonzalez-juarez/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </header>
@@ -198,9 +205,10 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
           <p>Disfruto de aprender cada día, y más de correr. Mi logro más grande fue hacer mi primera maratón. Mi mayor placer: comer taquitos y mole.</p>
         </div>
         <ul class="facts reveal">
-          <li><b>Formación</b>Doctorado en Eléctrica, Electrónica y Automática</li>
-          <li><b>Especialidad</b>Control, sistemas digitales y protecciones eléctricas</li>
-          <li><b>Hoy</b>Consultora en Capgemini · Energía, Aero, Defensa y Espacio</li>
+          <li><b>Formación</b>Doctorado en Ingeniería Eléctrica y Electrónica · UC3M · <em>cum laude</em></li>
+          <li><b>Especialidad</b>Control avanzado (control moderno y aprendizaje por refuerzo), Hardware in the Loop y redes inteligentes</li>
+          <li><b>Experiencia</b>Más de 8 años en Capgemini Engineering · Aeroespacial y Defensa, propulsión híbrida-eléctrica y energía eólica</li>
+          <li><b>Idiomas</b>Español (nativo) · Inglés (C1)</li>
           <li><b>Fuera del trabajo</b>Maratoniana · taquitos y mole</li>
         </ul>
       </div>
@@ -213,18 +221,28 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       <div class="head reveal"><h2>Trayectoria</h2></div>
       <ol class="timeline">
         <li class="reveal">
-          <div class="when">2018 – Presente</div>
+          <div class="when">2018 – 2026</div>
           <div>
-            <div class="role"><img src="img/logo-capgemini.jpg" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Consultora</h3></div>
-            <p class="org"><a href="https://www.capgemini.com/" target="_blank" rel="noopener">Capgemini</a> · Energía &amp; Aero, Defensa, Espacio</p>
+            <div class="role"><img src="img/logo-capgemini.jpg" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Consultora de I+D · Control y sistemas</h3></div>
+            <p class="org"><a href="https://www.capgemini.com/" target="_blank" rel="noopener">Capgemini Engineering</a> (antes Altran) · Madrid, España</p>
+            <ul>
+              <li><strong>División Aeroespacial y Defensa:</strong> I+D de tecnología de hidrógeno (H<sub>2</sub>) aplicada al sector aeronáutico.</li>
+              <li><strong>Propulsión híbrida-eléctrica (2020 – 2021):</strong> I+D de sistemas de propulsión híbrida-eléctrica.</li>
+              <li><strong>Consultora externa en Skydweller Aero (2019 – 2020):</strong> diseño, desarrollo e implementación de hardware electrónico y sistemas de control para aeronaves, conforme a estándares internacionales de certificación.</li>
+              <li><strong>Consultora externa en Siemens Gamesa:</strong> algoritmos de control para eólica, fotovoltaica y dispositivos de compensación en sistemas reales de generación distribuida.</li>
+              <li>Diseño de ensayos automatizados de validación de algoritmos de control para integración continua (Software in the Loop).</li>
+              <li>Aplicaciones GUIDE integradas en MATLAB-Simulink para validar sistemas de control en tiempo real.</li>
+            </ul>
           </div>
         </li>
         <li class="reveal">
-          <div class="when">2013 – 2016</div>
+          <div class="when">2017 – 2018</div>
           <div>
-            <div class="role"><img src="img/logo-circe.jpg" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Investigadora</h3></div>
-            <p class="org">CIRCE · Centro de Investigación de Recursos y Consumos Energéticos · Zaragoza, España</p>
+            <div class="role"><img src="img/logo-circe.jpg" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Investigadora posdoctoral</h3></div>
+            <p class="org">Fundación CIRCE · Zaragoza, España</p>
             <ul>
+              <li>Proyecto IdEAS: interoperabilidad de equipos de automatización de subestaciones.</li>
+              <li>Diseño y desarrollo de un banco de ensayos Hardware in the Loop para equipos de subestaciones eléctricas.</li>
               <li>Ensayos HIL: Omicron, relevadores ZIV, RTDS.</li>
               <li>Protecciones eléctricas de sistemas de potencia de distribución y transmisión.</li>
               <li>Norma IEC 61850: diseño y aplicación práctica.</li>
@@ -232,22 +250,111 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
           </div>
         </li>
         <li class="reveal">
-          <!-- REVISAR: en la web actual pone "2017-2009" -->
-          <div class="when">2009 – 2017</div>
+          <div class="when">2011 – 2017</div>
           <div>
-            <div class="role"><img src="img/logo_UC3M.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Investigación · Departamento de Ingeniería Eléctrica</h3></div>
-            <p class="org">Universidad Carlos III de Madrid · Grupo REDES · Madrid, España</p>
+            <div class="role"><img src="img/logo_UC3M.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Investigadora técnica de apoyo a proyectos</h3></div>
+            <p class="org">Universidad Carlos III de Madrid · Departamento de Ingeniería Eléctrica · Grupo REDES · Madrid, España</p>
+            <ul>
+              <li>OSIRIS: optimización de la supervisión inteligente de las redes de distribución.</li>
+              <li>PRICE-GEN: proyecto de red inteligente en el Corredor del Henares (gestión de la energía).</li>
+              <li>DOMOCELL: sistema residencial de recarga de vehículos eléctricos.</li>
+              <li>Investigación doctoral.</li>
+            </ul>
           </div>
         </li>
         <li class="reveal">
-          <!-- REVISAR: en la web actual pone "2009-2004" -->
-          <div class="when">2004 – 2009</div>
+          <div class="when">2007 – 2010</div>
           <div>
-            <div class="role"><img src="img/logo-pemex.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Supervisora de Obra Eléctrica y Seguridad Industrial</h3></div>
-            <p class="org">Pemex · Refinería Ing. Antonio M. Amor (RIAMA) · Salamanca, México</p>
+            <div class="role"><img src="img/logo_UC3M.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Becaria CONACYT de formación en el extranjero</h3></div>
+            <p class="org">Consejo Nacional de Ciencia y Tecnología (México) · Universidad Carlos III de Madrid</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="when">2003 – 2006</div>
+          <div>
+            <div class="role"><img src="img/logo-pemex.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Supervisora de Seguridad Industrial</h3></div>
+            <p class="org">Conjunto de Servicios Industriales · REYSA Designs · Refinería Ing. Antonio M. Amor (RIAMA) · Salamanca, México</p>
+            <ul>
+              <li>Supervisión de seguridad en instalaciones eléctricas durante trabajos de reparación en la refinería.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="when">2002 – 2003</div>
+          <div>
+            <div class="role"><h3>Ingeniera en prácticas</h3></div>
+            <p class="org">Siemens · Refinería Ing. Antonio M. Amor (RIAMA) · Salamanca, México</p>
+            <ul>
+              <li>Software de escritorio y embebido: sistemas de control RTOS y embebidos.</li>
+            </ul>
           </div>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <!-- ============ FORMACIÓN ============ -->
+  <section id="formacion">
+    <div class="wrap">
+      <div class="head reveal"><h2>Formación</h2></div>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="when">2008 – 2015</div>
+          <div>
+            <div class="role"><img src="img/logo_UC3M.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Doctorado en Ingeniería Eléctrica y Electrónica</h3></div>
+            <p class="org">Universidad Carlos III de Madrid · Calificación: <em>cum laude</em></p>
+            <ul>
+              <li>Modelos de redes eléctricas de distribución inteligentes (Smart Grids) e implementación en el simulador digital en tiempo real OPAL-RT.</li>
+              <li>Algoritmos de gestión de la demanda integrados en simulación Hardware in the Loop.</li>
+              <li>Sistemas de control para generación renovable, generación convencional y dispositivos FACTS; control de un STATCOM en la plataforma en tiempo real dSPACE.</li>
+              <li>Control coordinado de tensión en redes de distribución activas.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="when">2005 – 2007</div>
+          <div>
+            <div class="role"><h3>Maestría en Ingeniería Eléctrica · Sistemas Digitales y Control</h3></div>
+            <p class="org">Universidad de Guanajuato · Beca completa de investigación CONACYT</p>
+            <ul>
+              <li>Procesamiento de señales con VHDL para el diseño de controladores digitales en FPGA.</li>
+              <li>Proyectos de control en LabVIEW, C++ y Visual Studio.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      <!-- LinkedIn lista 3 titulaciones; añade aquí la tercera copiando un bloque <li> de arriba. -->
+    </div>
+  </section>
+
+  <!-- ============ PUBLICACIONES ============ -->
+  <section id="publicaciones" class="alt">
+    <div class="wrap">
+      <div class="head reveal"><h2>Publicaciones</h2><p>Una selección de mis trabajos; la lista completa está en LinkedIn.</p></div>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="when">Oct 2016</div>
+          <div>
+            <div class="role"><h3>Gestión de congestiones en redes eléctricas inteligentes</h3></div>
+            <p class="org">III Congreso Smart Grids</p>
+            <ul>
+              <li>Control de congestiones que coordina la optimización en tiempo real de los recursos energéticos distribuidos (STATCOM, generación distribuida) con la reconfiguración dinámica de la red, probado en un piloto del proyecto europeo IDE4L.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="when">Oct 2016</div>
+          <div>
+            <div class="role"><h3>Control coordinado de tensión en redes inteligentes: desarrollo e implementación «Hardware in the loop»</h3></div>
+            <p class="org">III Congreso Smart Grids</p>
+            <ul>
+              <li>Arquitectura de control jerárquica con estimación de demanda, estimación de estado y control coordinado de tensión, implementada experimentalmente en la plataforma OPAL-RT.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      <!-- LinkedIn lista 8 publicaciones; añade aquí el resto copiando un bloque <li> de arriba. -->
+      <p class="more"><a class="btn btn-ghost" href="https://www.linkedin.com/in/lg-gonzalez-juarez/" target="_blank" rel="noopener">Ver todas en LinkedIn →</a></p>
     </div>
   </section>
 
@@ -298,9 +405,9 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
     <div class="wrap">
       <div class="head reveal"><h2>¿Hablamos?</h2><p>Para colaboraciones, proyectos o cualquier pregunta, escríbeme con este formulario.</p></div>
       <div class="social reveal">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/lg-gonzalez-juarez/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/lg-gonzalez-juarez" target="_blank" rel="noopener">GitHub</a>
         <!-- Añade aquí tus perfiles reales:
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram</a> -->
       </div>
       <div class="contact reveal">

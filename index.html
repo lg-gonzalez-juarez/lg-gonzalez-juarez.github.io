@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lorena Guadalupe Gonzalez Juarez · Electric, Electronic and Automatic PhD</title>
+<meta name="description" content="Personal website of Lorena Guadalupe Gonzalez Juarez: PhD in Electrical, Electronic and Automatic Engineering, consultant at Capgemini. Control, digital systems, electrical protections and IEC 61850.">
+<link rel="canonical" href="https://lorenaguadalupegonzalezjuarez.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lorena Guadalupe Gonzalez Juarez">
+<meta property="og:description" content="PhD in Electrical, Electronic and Automatic Engineering. Control and digital systems.">
+<meta property="og:url" content="https://lorenaguadalupegonzalezjuarez.com/">
+<meta property="og:image" content="https://lorenaguadalupegonzalezjuarez.com/img/header-bg.jpg">
+<meta name="theme-color" content="#0b0f17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0f17'/%3E%3Cpath d='M18 4 8 18h7l-2 10 11-15h-7z' fill='%23fbbf24'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0f17; --bg-alt:#101624; --surface:#151c2c; --line:#232c3f;
+  --text:#e8ecf3; --muted:#9aa5b8; --accent:#fbbf24; --accent-ink:#1a1300;
+  --radius:16px; --wrap:1080px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(100% - 40px,var(--wrap));margin-inline:auto}
+.accent{color:var(--accent)}
+
+/* ---------- Navegación ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:18px 0;transition:background .3s,padding .3s,box-shadow .3s}
+.nav.solid{background:rgba(11,15,23,.92);backdrop-filter:blur(10px);padding:11px 0;box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(100% - 40px,1240px)}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:1.2rem;letter-spacing:-.02em;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand svg{width:22px;height:22px;flex:none}
+.menu{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.menu a{color:#d5dbe6;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a.on{color:#fff;border-color:var(--accent);text-decoration:none}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;padding:0;color:#fff}
+.burger span{display:block;width:20px;height:2px;background:currentColor;margin:4px auto;transition:transform .25s,opacity .25s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;padding:120px 0 90px;isolation:isolate;
+  background:radial-gradient(1200px 600px at 70% 10%,#1d2a48 0%,transparent 60%),var(--bg)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("img/header-bg.jpg") center/cover no-repeat;opacity:.5}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(11,15,23,.72) 0%,rgba(11,15,23,.6) 45%,var(--bg) 100%)}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-size:clamp(2.5rem,7.4vw,4.6rem);line-height:1.04;letter-spacing:-.03em;font-weight:800;margin:0 0 18px;color:#fff;text-wrap:balance}
+.lead{font-size:clamp(1.08rem,2.4vw,1.45rem);color:#d2d9e6;margin:0 auto 34px;max-width:36ch;text-wrap:balance}
+.lead strong{color:var(--accent);font-weight:600}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.95rem;
+  border:1px solid transparent;transition:transform .15s,background .2s,border-color .2s}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:#fcd34d}
+.btn-ghost{background:rgba(21,28,44,.75);color:#fff;border-color:#34405a}
+.btn-ghost:hover{border-color:var(--accent)}
+
+/* ---------- Secciones ---------- */
+section{padding:96px 0}
+.alt{background:var(--bg-alt);border-block:1px solid var(--line)}
+.head{text-align:center;margin-bottom:54px}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.15;letter-spacing:-.02em;margin:0;color:#fff}
+.head::after{content:"";display:block;width:64px;height:4px;border-radius:4px;background:var(--accent);margin:18px auto 0}
+.head p{color:var(--muted);margin:14px auto 0;max-width:56ch}
+
+/* Sobre mí */
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:44px;align-items:start}
+.about p{margin:0 0 16px;color:#cfd6e2}
+.about p:first-child{font-size:1.2rem;color:#fff}
+.facts{display:grid;gap:14px;list-style:none;margin:0;padding:0}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.facts b{display:block;color:var(--accent);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+
+/* Trayectoria (línea de tiempo) */
+.timeline{list-style:none;margin:0 auto;padding:0;max-width:860px;position:relative}
+.timeline::before{content:"";position:absolute;left:190px;top:10px;bottom:10px;width:2px;background:var(--line)}
+.timeline li{display:grid;grid-template-columns:160px 1fr;column-gap:60px;position:relative;padding-bottom:46px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:181px;top:6px;width:20px;height:20px;border-radius:50%;
+  background:var(--bg);border:3px solid var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.alt .timeline li::before{background:var(--bg-alt);box-shadow:0 0 0 5px var(--bg-alt)}
+.when{color:var(--accent);font-weight:700;text-align:right;padding-top:2px;font-variant-numeric:tabular-nums}
+.role{display:flex;align-items:center;gap:14px;margin-bottom:4px}
+.role img{width:46px;height:46px;object-fit:contain;background:#fff;border-radius:10px;padding:4px;flex:none}
+h3{font-size:1.28rem;line-height:1.25;margin:0;color:#fff}
+.org{color:var(--muted);margin:0 0 10px}
+.timeline ul{list-style:none;margin:0;padding:0;color:#cfd6e2;font-size:.97rem}
+.timeline ul li{display:block;padding:0 0 6px 22px;position:relative}
+.timeline ul li::before{content:"›";position:absolute;left:4px;top:-2px;width:auto;height:auto;border:0;background:none;box-shadow:none;color:var(--accent);font-weight:700;border-radius:0}
+
+/* Tarjetas (repos) */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;color:var(--text);transition:transform .2s,border-color .2s}
+.card:hover{text-decoration:none;transform:translateY(-4px);border-color:var(--accent)}
+.card svg{width:26px;height:26px;color:var(--accent)}
+.card h3{font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.card span{color:var(--accent);font-weight:700;font-size:.9rem}
+
+/* Vídeos */
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.video{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.more{margin-top:34px;text-align:center}
+
+/* Contacto */
+.contact{max-width:760px;margin-inline:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.contact iframe{display:block;width:100%;height:860px;border:0;background:#fff}
+.contact p{margin:0;padding:14px 20px;text-align:center;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line)}
+.social{display:flex;justify-content:center;gap:12px;margin-bottom:30px;flex-wrap:wrap}
+
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:.9rem}
+
+/* Aparición suave */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.card{transition:none}}
+
+/* ---------- Móvil ---------- */
+@media (max-width:860px){
+  .burger{display:block}
+  .menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(11,15,23,.98);
+    border-bottom:1px solid var(--line);padding:8px 20px 16px;display:none}
+  .menu.open{display:flex}
+  .menu a{display:block;padding:13px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+  .menu li:last-child a{border-bottom:0}
+  section{padding:70px 0}
+  .about{grid-template-columns:1fr;gap:28px}
+  .timeline::before{left:9px}
+  .timeline li{grid-template-columns:1fr;padding-left:40px}
+  .timeline li::before{left:0}
+  .when{text-align:left;margin-bottom:6px}
+  .timeline ul li{padding-left:22px}
+  .contact iframe{height:980px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <svg viewBox="0 0 24 24" fill="#fbbf24" aria-hidden="true"><path d="M13.5 2 5 13.5h5.5L9 22l9.5-12.5H13z"/></svg>
+      <span>Lorena Guadalupe <span class="accent">González Juárez</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <ul class="menu" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">About me</a></li>
+      <li><a href="#biografia">Trayectoria</a></li>
+      <li><a href="#repos">Repos</a></li>
+      <li><a href="#videos">Vídeos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- ============ INICIO ============ -->
+  <header class="hero" id="inicio">
+    <div class="wrap">
+      <span class="eyebrow">PhD · Ingeniera</span>
+      <h1>Lorena Guadalupe González Juárez</h1>
+      <p class="lead">Eléctrica, Electrónica y Automática: <strong>control y sistemas digitales</strong></p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#biografia">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
+          Ver mi trayectoria
+        </a>
+        <a class="btn btn-ghost" href="#contact">Contactar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section id="sobre-mi">
+    <div class="wrap">
+      <div class="head reveal"><h2>Sobre mí</h2></div>
+      <div class="about">
+        <div class="reveal">
+          <p>Investigadora en el sector eléctrico, electrónico y de automática.</p>
+          <p>Durante la realización de mi tesis de ingeniería en la termoeléctrica de Salamanca y mis prácticas profesionales en la refinería RIAMA, se reiteró mi pasión por el área de control y sistemas digitales.</p>
+          <p>La curiosidad me llevó a realizar una maestría en eléctrica con especialidad en sistemas digitales y control. El espíritu aventurero me ayudó a resetear mi vida y llegar a España, donde realicé un doctorado en Eléctrica, Electrónica y Automática.</p>
+          <p>Disfruto de aprender cada día, y más de correr. Mi logro más grande fue hacer mi primera maratón. Mi mayor placer: comer taquitos y mole.</p>
+        </div>
+        <ul class="facts reveal">
+          <li><b>Formación</b>Doctorado en Eléctrica, Electrónica y Automática</li>
+          <li><b>Especialidad</b>Control, sistemas digitales y protecciones eléctricas</li>
+          <li><b>Hoy</b>Consultora en Capgemini · Energía, Aero, Defensa y Espacio</li>
+          <li><b>Fuera del trabajo</b>Maratoniana · taquitos y mole</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAYECTORIA ============ -->
+  <section id="biografia" class="alt">
+    <div class="wrap">
+      <div class="head reveal"><h2>Trayectoria</h2></div>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="when">2018 – Presente</div>
+          <div>
+            <div class="role"><img src="img/logo-capgemini.jpg" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Consultora</h3></div>
+            <p class="org"><a href="https://www.capgemini.com/" target="_blank" rel="noopener">Capgemini</a> · Energía &amp; Aero, Defensa, Espacio</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="when">2013 – 2016</div>
+          <div>
+            <div class="role"><img src="img/logo-circe.jpg" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Investigadora</h3></div>
+            <p class="org">CIRCE · Centro de Investigación de Recursos y Consumos Energéticos · Zaragoza, España</p>
+            <ul>
+              <li>Ensayos HIL: Omicron, relevadores ZIV, RTDS.</li>
+              <li>Protecciones eléctricas de sistemas de potencia de distribución y transmisión.</li>
+              <li>Norma IEC 61850: diseño y aplicación práctica.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <!-- REVISAR: en la web actual pone "2017-2009" -->
+          <div class="when">2009 – 2017</div>
+          <div>
+            <div class="role"><img src="img/logo_UC3M.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Investigación · Departamento de Ingeniería Eléctrica</h3></div>
+            <p class="org">Universidad Carlos III de Madrid · Grupo REDES · Madrid, España</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <!-- REVISAR: en la web actual pone "2009-2004" -->
+          <div class="when">2004 – 2009</div>
+          <div>
+            <div class="role"><img src="img/logo-pemex.png" alt="" width="46" height="46" loading="lazy" onerror="this.remove()"><h3>Supervisora de Obra Eléctrica y Seguridad Industrial</h3></div>
+            <p class="org">Pemex · Refinería Ing. Antonio M. Amor (RIAMA) · Salamanca, México</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ REPOS ============ -->
+  <section id="repos">
+    <div class="wrap">
+      <div class="head reveal"><h2>Repos y apuntes</h2><p>Código abierto y documentación que voy publicando.</p></div>
+      <div class="cards">
+        <a class="card reveal" href="https://github.com/lg-gonzalez-juarez" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          <h3>GitHub</h3><p>Mi perfil y todos mis repositorios públicos.</p><span>Abrir →</span>
+        </a>
+        <a class="card reveal" href="/documentation/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21a2 2 0 0 0 2 2h13v-4"/><path d="M9 8h6M9 12h6"/></svg>
+          <h3>Documentación</h3><p>Apuntes y tutoriales: Python, MATLAB, Machine Learning, Arduino…</p><span>Abrir →</span>
+        </a>
+        <a class="card reveal" href="/matlabnotes/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19h18"/><path d="M4 16c3 0 3-10 6-10s3 10 5 10 3-6 5-6"/></svg>
+          <h3>MATLAB notes</h3><p>Notas de MATLAB.</p><span>Abrir →</span>
+        </a>
+        <a class="card reveal" href="/PlanningTestB2/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <h3>Planning Test B2</h3><p>Unidades de gramática y vocabulario de inglés.</p><span>Abrir →</span>
+        </a>
+      </div>
+      <!-- PUBLICACIONES: añade aquí tus perfiles reales (Google Scholar, ORCID, ResearchGate…) copiando una tarjeta de arriba. -->
+    </div>
+  </section>
+
+  <!-- ============ VÍDEOS ============ -->
+  <section id="videos" class="alt">
+    <div class="wrap">
+      <div class="head reveal"><h2>Vídeos destacados</h2></div>
+      <div class="videos">
+        <div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/j0ZUckiBvuk" title="Vídeo 1" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/WgmUP7qvCl0" title="Vídeo 2" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/wW12Q6qY0tc" title="Vídeo 3" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/yI1XOHsHrMg" title="Vídeo 4" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video reveal"><iframe src="https://www.youtube-nocookie.com/embed/1juGfWG3n7o" title="Vídeo 5" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
+      <!-- CANAL: cuando tengas la URL de tu canal, descomenta:
+      <p class="more"><a class="btn btn-ghost" href="https://www.youtube.com/channel/TU_CANAL" target="_blank" rel="noopener">Ver canal de YouTube →</a></p> -->
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="head reveal"><h2>¿Hablamos?</h2><p>Para colaboraciones, proyectos o cualquier pregunta, escríbeme con este formulario.</p></div>
+      <div class="social reveal">
+        <a class="btn btn-ghost" href="https://github.com/lg-gonzalez-juarez" target="_blank" rel="noopener">GitHub</a>
+        <!-- Añade aquí tus perfiles reales:
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram</a> -->
+      </div>
+      <div class="contact reveal">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCC05gLeQwD_AgsNoaTgX7RAURnVfhzkeFl0gvk0sV77i4xQ/viewform?embedded=true" title="Formulario de contacto" loading="lazy">Cargando…</iframe>
+        <p>¿No ves el formulario? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCC05gLeQwD_AgsNoaTgX7RAURnVfhzkeFl0gvk0sV77i4xQ/viewform" target="_blank" rel="noopener">Ábrelo en una pestaña nueva</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Lorena Guadalupe González Juárez | Copyright © <span id="year">2026</span></div>
+</footer>
+
+<script>
+(function () {
+  var nav = document.getElementById('nav'), burger = document.getElementById('burger'), menu = document.getElementById('menu');
+  var links = [].slice.call(menu.querySelectorAll('a'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function onScroll() { nav.classList.toggle('solid', window.scrollY > 40 || menu.classList.contains('open')); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  function setMenu(open) {
+    menu.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    onScroll();
+  }
+  burger.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+  links.forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+  if ('IntersectionObserver' in window) {
+    var reveal = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); reveal.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { reveal.observe(el); });
+
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) links.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main > [id]').forEach(function (s) { spy.observe(s); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
